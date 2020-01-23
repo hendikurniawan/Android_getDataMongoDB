@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Graph">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/chartp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </com.github.mikephil.charting.charts.PieChart>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/chartb"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </com.github.mikephil.charting.charts.BarChart>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/chartl"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </com.github.mikephil.charting.charts.LineChart>
+        </LinearLayout>
+
+
+         <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+    </ScrollView>
+</LinearLayout>
